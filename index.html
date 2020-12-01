@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="skeleton.css">
+</head>
+<body>
+
+        <h3>Piano Accords Majeurs</h3>
+
+        <div class="begin" id="begin">
+            <label for="option">Accords avec Bemol ou Diez?</label>
+            <select id="option">
+                <option value="bemol">Bemol</option>
+                <option value="diez">Diez</option>
+                <option value="deux">Les deux</option>
+            </select> <br>
+            <a class="button button-primary" id="start" href="#">Start</a>
+        </div>
+        <div class="hide" id="hide">
+            <h2 id="word"></h2>
+            <input type="text" id="text">
+            <button class="btnstyle" id="bemol">♭</button>
+            <button class="btnstyle" id="diez">♯</button>
+            <br><button class="btnstyle" id="confirm">Confirmer</button>
+            <p>Juste: <span id="juste"></p>
+        </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
